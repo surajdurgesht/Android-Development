@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/simple_switch"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:clickable="true"
+        android:text="  Bluetooth"
+        android:layout_gravity="left"
+        android:textSize="25sp"
+        android:background="#a4c639"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/listView"
+        android:layout_alignLeft="@+id/listView"
+        android:text="Paired devices:"
+        android:textColor="#a4c639"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="273dp"
+        android:layout_margin="15dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignParentBottom="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="324dp"
+        android:layout_margin="15dp"/>
+
+</LinearLayout>
